@@ -1,0 +1,310 @@
+[
+  {
+    "id": "t1",
+    "task_type": "bug",
+    "task_label": "backend",
+    "key": "BUG-1",
+    "title": "Auth flow throws 500 on expired tokens",
+    "desc": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Users hitting the login page after session timeout get a server error instead of a redirect to sign-in."
+            }
+          ]
+        }
+      ]
+    },
+    "status": "in-progress",
+    "priority": "critical",
+    "assignedto": "kn@trak.dev",
+    "tags": [
+      "bug",
+      "backend"
+    ],
+    "created": "2026-09-08 09:00:00",
+    "updated": "2026-09-15 17:08:00",
+    "planStartDate": "2026-09-15",
+    "estimated": 3,
+    "plannedEndDate": "2026-09-18",
+    "actualStart": "2026-09-16",
+    "actualEnd": "",
+    "workflow": "bug-triage",
+    "wf_status": "Pending",
+    "wf_substatus": "—",
+    "assignee": "ava",
+    "created_at": "2026-09-08",
+    "dueDate": "2026-09-18",
+    "description": "Users hitting the login page after session timeout get a server error instead of a redirect to sign-in."
+  },
+  {
+    "id": "t2",
+    "task_type": "feature",
+    "task_label": "genomics",
+    "key": "FEATURE-2",
+    "title": "Add EJS + CSV multi-source report compiler",
+    "desc": {
+      "type": "root",
+      "children": [
+        {
+          "type": "heading",
+          "depth": 2,
+          "children": [
+            {
+              "type": "text",
+              "value": "Multi-Source Report Engine"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Support local CSV, remote API, S3 buckets, and Google Sheets with Loro CRDT diffing."
+            }
+          ]
+        }
+      ]
+    },
+    "status": "in-progress",
+    "priority": "high",
+    "assignedto": "liam@genobench.dev",
+    "tags": [
+      "reports",
+      "ejs",
+      "genomics"
+    ],
+    "created": "2026-09-09 10:15:00",
+    "updated": "2026-09-15 14:20:00",
+    "planStartDate": "2026-09-09",
+    "estimated": 4,
+    "plannedEndDate": "2026-09-13",
+    "actualStart": "2026-09-09",
+    "actualEnd": "",
+    "workflow": "sdlc-delivery",
+    "wf_status": "Running",
+    "wf_substatus": "04_TDD",
+    "assignee": "liam",
+    "created_at": "2026-09-09",
+    "dueDate": "2026-09-13",
+    "description": "Support local CSV, remote API, S3 buckets, and Google Sheets with Loro CRDT diffing."
+  },
+  {
+    "id": "t3",
+    "task_type": "task",
+    "task_label": "infra",
+    "key": "TASK-3",
+    "title": "Wire Loro CRDT & IndexedDB report diffing",
+    "desc": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Track cell and template edits locally in IndexedDB before syncing via StorageAdapter."
+            }
+          ]
+        }
+      ]
+    },
+    "status": "in-progress",
+    "priority": "medium",
+    "assignedto": "ava@genobench.dev",
+    "tags": [
+      "crdt",
+      "loro",
+      "infra"
+    ],
+    "created": "2026-09-10 11:00:00",
+    "updated": "2026-09-15 16:00:00",
+    "planStartDate": "2026-09-10",
+    "estimated": 5,
+    "plannedEndDate": "2026-09-15",
+    "actualStart": "2026-09-10",
+    "actualEnd": "",
+    "workflow": "sdlc-delivery",
+    "wf_status": "Running",
+    "wf_substatus": "04_TDD",
+    "assignee": "ava",
+    "created_at": "2026-09-10",
+    "dueDate": "2026-09-15",
+    "description": "Track cell and template edits locally in IndexedDB before syncing via StorageAdapter."
+  },
+  {
+    "id": "t4",
+    "task_type": "story",
+    "task_label": "analytics",
+    "key": "STORY-4",
+    "title": "Validate edits with Zod, TypeBox, and Business Rules",
+    "desc": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Enforce schema rules and cross-field date/completion business rules before saving."
+            }
+          ]
+        }
+      ]
+    },
+    "status": "todo",
+    "priority": "high",
+    "assignedto": "noah@genobench.dev",
+    "tags": [
+      "schema",
+      "zod",
+      "typebox"
+    ],
+    "created": "2026-09-11 08:30:00",
+    "updated": "2026-09-11 08:30:00",
+    "planStartDate": "2026-09-11",
+    "estimated": 2,
+    "plannedEndDate": "2026-09-13",
+    "actualStart": "",
+    "actualEnd": "",
+    "workflow": "sdlc-delivery",
+    "wf_status": "Pending",
+    "wf_substatus": "—",
+    "assignee": "noah",
+    "created_at": "2026-09-11",
+    "dueDate": "2026-09-13",
+    "description": "Enforce schema rules and cross-field date/completion business rules before saving."
+  },
+  {
+    "id": "t5",
+    "task_type": "epic",
+    "task_label": "frontend",
+    "key": "EPIC-5",
+    "title": "Embed Milkdown MDX charts with SQL cross-filter",
+    "desc": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Render chart blocks referencing ops.json and inline DuckDB SQL queries."
+            }
+          ]
+        }
+      ]
+    },
+    "status": "in-review",
+    "priority": "low",
+    "assignedto": "emma@genobench.dev",
+    "tags": [
+      "milkdown",
+      "charts",
+      "frontend"
+    ],
+    "created": "2026-09-12 13:45:00",
+    "updated": "2026-09-14 10:00:00",
+    "planStartDate": "2026-09-12",
+    "estimated": 3,
+    "plannedEndDate": "2026-09-15",
+    "actualStart": "2026-09-12",
+    "actualEnd": "",
+    "workflow": "sdlc-delivery",
+    "wf_status": "Review",
+    "wf_substatus": "05_EVAL",
+    "assignee": "emma",
+    "created_at": "2026-09-12",
+    "dueDate": "2026-09-15",
+    "description": "Render chart blocks referencing ops.json and inline DuckDB SQL queries."
+  },
+  {
+    "id": "t6",
+    "task_type": "chore",
+    "task_label": "security",
+    "key": "CHORE-6",
+    "title": "Audit remote iframe sandbox policy",
+    "desc": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Verify sandboxed iframe rendering for remote routes and inline HTML report previews."
+            }
+          ]
+        }
+      ]
+    },
+    "status": "blocked",
+    "priority": "low",
+    "assignedto": "liam@genobench.dev",
+    "tags": [
+      "security",
+      "iframe"
+    ],
+    "created": "2026-09-14 09:20:00",
+    "updated": "2026-09-14 15:10:00",
+    "planStartDate": "2026-09-14",
+    "estimated": 2,
+    "plannedEndDate": "2026-09-16",
+    "actualStart": "2026-09-14",
+    "actualEnd": "",
+    "workflow": "sec-audit",
+    "wf_status": "Blocked",
+    "wf_substatus": "SAST",
+    "assignee": "liam",
+    "created_at": "2026-09-14",
+    "dueDate": "2026-09-16",
+    "description": "Verify sandboxed iframe rendering for remote routes and inline HTML report previews."
+  },
+  {
+    "id": "t7",
+    "task_type": "spike",
+    "task_label": "docs",
+    "key": "SPIKE-7",
+    "title": "Publish initial workspace config specification",
+    "desc": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Baseline sample-workspace-config.json schema and multi-adapter task sync documentation."
+            }
+          ]
+        }
+      ]
+    },
+    "status": "complete",
+    "priority": "medium",
+    "assignedto": "ava@genobench.dev",
+    "tags": [
+      "docs",
+      "config"
+    ],
+    "created": "2026-09-15 08:00:00",
+    "updated": "2026-09-16 18:00:00",
+    "planStartDate": "2026-09-15",
+    "estimated": 1,
+    "plannedEndDate": "2026-09-16",
+    "actualStart": "2026-09-15",
+    "actualEnd": "2026-09-16",
+    "workflow": "sdlc-delivery",
+    "wf_status": "Completed",
+    "wf_substatus": "06_RELEASE",
+    "assignee": "ava",
+    "created_at": "2026-09-15",
+    "dueDate": "2026-09-16",
+    "description": "Baseline sample-workspace-config.json schema and multi-adapter task sync documentation."
+  }
+]
